@@ -13,3 +13,4 @@ class NewsController extends Controller
       return view('admin.news.create');
   }
 }
+// ユーザー側がブログに投稿する処理を行う場所
