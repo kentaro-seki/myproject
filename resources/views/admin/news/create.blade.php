@@ -11,6 +11,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>研修用</h2>
+                <a href="" class="btn btn-info">toppage</a>
             </div>
         </div>
     </div>
