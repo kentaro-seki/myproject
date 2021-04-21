@@ -14,14 +14,31 @@ toppage
     <div></div>
     <div class="title"></div>
     <div id=""></div>
+    <!-- まず形をHTMLで描いておく -->
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+<p>ログインの説明</p>
+
+    <li>ログインIDを設定する</li>
+    <form action="#" method="POST">
+    <p>
+    ログインID：
+    <input type="text">
+    </p>
+    </form>
+    <li>パスワードを設定する</li>
+    <form action="#" method="POST">
+    <p>
+    パスワード：
+    <input type="text">
+    <div>
+    <input type="submit" name="button" value="ログイン">
+    </div>
+    </p>
+    </form>
 <div>
     <!-- bootstrapを覚える -->
 
-    <a href="" class="btn btn-info">toppage</a>
+
 </div>
 
 </ul>
