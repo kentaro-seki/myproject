@@ -1,7 +1,3 @@
-toppage
-
-<!-- comand/ ここにｈｔｍｌ -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +5,13 @@ toppage
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+<!-- publicまでに見にいく scssを変換して読み込む-->
 </head>
 <body>
-    <div></div>
-    <div class="title"></div>
-    <div id=""></div>
     <!-- まず形をHTMLで描いておく -->
-<ul>
-<p>ログインの説明</p>
+    <div class="containar">
+    <p>ログインの説明</p>
 
     <li>ログインIDを設定する</li>
     <form action="#" method="POST">
@@ -35,12 +30,7 @@ toppage
     </div>
     </p>
     </form>
-<div>
+    </div>
     <!-- bootstrapを覚える -->
-
-
-</div>
-
-</ul>
 </body>
 </html>
