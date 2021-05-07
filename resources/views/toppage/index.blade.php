@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 継承対応の際に必要になる　<meta name="csrf-token" content="{{ csrf_token() }}"> -->
     <title>TOPPAGE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
@@ -46,12 +48,15 @@
     <button type="button" class="btn btn-warning">新規登録</button>
     <P>新規ログインの方は登録が必要となります</P>
     
-    
+    <!-- ログイン済みの方 リンクの書き方の一例-->
+<a href="{{route('app_manage.index')}}">アプリ管理</a>
+
     ここの下に写真か画像を挿入
     <iframe width="560" height="315">
   <img src="..." class="card-img-top" alt="...">
     </iframe>
 </div>
+<!-- 継承対応の際に@yield('') -->
 <div class="container">
     <div class="sitemap">
 

@@ -20,3 +20,8 @@ Route::get('third/index', 'ThirdController@index');
 Route::group(['prefix' => 'admin'], function() {
     Route::get('news/create', 'Admin\NewsController@add');
 });
+
+Route::group([], function() {
+    Route::get('app_manage/', 'AppManageController@index')->name('app_manage.index');
+
+});
