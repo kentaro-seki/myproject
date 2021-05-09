@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'AppToppageController@index');
+    Route::get('/', 'AppToppageController@index')->name('app_toppage.index');
 
 Route::group(['prefix' => 'admin'], function() {
     Route::get('news/create', 'Admin\NewsController@add');
@@ -25,4 +25,8 @@ Route::group([], function() {
 Route::group([], function() {
     Route::get('app_addition/', 'AppAdditionController@index')->name('app_addition.index');
 
+});
+
+Route::group([], function() {
+    Route::get('app_info/', 'AppInfoController@index')->name('app_info.index');
 });

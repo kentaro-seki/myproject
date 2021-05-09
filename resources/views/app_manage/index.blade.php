@@ -10,25 +10,23 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-dark" href="{{route('app_toppage.index')}}">APPMANAGER</a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+                <a class="nav-link text-dark" href="{{route('app_toppage.index')}}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-dark" href="{{route('app_manage.index')}}">manager</a>
+                <a class="nav-link text-dark" href="{{route('app_addition.index')}}">Addition</a>
+                <a class="nav-link text-dark" href="{{route('app_info.index')}}">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 bg-primary text-white">APP管理場所</div>
-    <div class="col-sm-4 bg-primary text-white">紹介ポタン</div>
-  </div>
- 
-  <div class="container bg-black">
-  <div class="row">
-    <div class="col-md 10 bg-primary text-white">
-      <hi>使用中アプリ</hi>
-    </div>
-    
-    <div class="col-md">
-      未使用アプリ
-    </div>
-  </div>
-</div>
-
-</div>
+    <footer class="text-center bg-dark text-white">
+        <p class="py-3">APPMANAGER</p>
+    </footer>
 </body>
 </html>
