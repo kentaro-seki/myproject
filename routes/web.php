@@ -14,7 +14,7 @@
     Route::get('/', 'AppToppageController@index')->name('app_toppage.index');
 
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('news/create', 'Admin\NewsController@add');
+    Route::get('contact/', 'Admin\ContactController@index');
 });
 
 Route::group([], function() {
@@ -29,4 +29,11 @@ Route::group([], function() {
 
 Route::group([], function() {
     Route::get('app_info/', 'AppInfoController@index')->name('app_info.index');
+    Route::post('app_info/', 'AppInfoController@add')->name('app_info.index');
+
+
+});
+
+Route::group([], function() {
+    Route::get('contact/', 'ContactController@index')->name('contact.index');
 });

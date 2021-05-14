@@ -1,13 +1,13 @@
 @extends('layouts.app')
-@section('title', 'manage')
+@section('title', 'toppage')
 
 @section('content')
 
 <div class="container py-4" id="works">
     <h2>APPMNAGER</h2>
         <p>こちらのサイトでは現在お使いのアプリ、ツール等が一括し管理できるサービスを提供しております。</p>
-     <div class="card-deck">
-        <div class="card">
+     <div class="card-deck"> 
+        <div class="card ">
               <img src="/images/image.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">デザインロゴ</h5>
@@ -35,7 +35,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <a href="{{route('app_manage.index')}}" class="btn btn-primary">OK</a>
+        <a href="{{route('app_info.index')}}" class="btn btn-primary">OK</a>
     <!-- route でInfoへ移動できるようにする -->
     </form>
 </div>

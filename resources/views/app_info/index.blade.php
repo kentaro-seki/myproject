@@ -1,9 +1,17 @@
 @extends('layouts.app')
-@section('title', 'manage')
+@section('title', 'info')
 
 @section('content')
 <div class="container my-5">
 <h2>Contact</h2>
+<form action="{{ action('AppInfoController@add') }}" method="post" enctype="multipart/form-data">
+@if (count($errors) > 0)
+    <ul>
+@foreach($errors->all() as $e)
+    <li>{{ $e }}</li>
+@endforeach
+    </ul>
+@endif
     <form method="post" action="">
       <div class="form-group">
       <label for="exampleInputEmail1">Email</label>

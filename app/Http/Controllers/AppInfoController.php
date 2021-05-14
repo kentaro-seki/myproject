@@ -11,4 +11,9 @@ class AppInfoController extends Controller
     {
         return view('app_info.index');
     }
+    public function add(Request $request)
+    {
+        return redirect('app_info.index');
+    }  
+
 }
