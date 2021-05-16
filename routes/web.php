@@ -28,12 +28,7 @@ Route::group([], function() {
 });
 
 Route::group([], function() {
-    Route::get('app_info/', 'AppInfoController@index')->name('app_info.index');
-    Route::post('app_info/', 'AppInfoController@add')->name('app_info.index');
-
-
-});
-
-Route::group([], function() {
     Route::get('contact/', 'ContactController@index')->name('contact.index');
+    Route::post('contact/', 'ContactController@add')->name('contact.index');
+
 });

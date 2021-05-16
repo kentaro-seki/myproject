@@ -35,7 +35,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <a href="{{route('app_info.index')}}" class="btn btn-primary">OK</a>
+        <a href="{{route('contact.index')}}" class="btn btn-primary">OK</a>
     <!-- route でInfoへ移動できるようにする -->
     </form>
 </div>

@@ -4,15 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class App extends Model
+class Contact extends Model
 {
     protected $guarded = array('id');
 
     // 以下を追記
     public static $rules = array(
-        'appname' => 'required',
-        'url' => 'required',
-        'userid' => 'required',
-        'address' => 'required',
+        'email' => 'requiredz',
+        'name' => 'required',
+        'inquiry' => 'required',
+        
     );
 }

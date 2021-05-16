@@ -16,6 +16,10 @@ class CreateAppsTable extends Migration
         Schema::create('apps', function (Blueprint $table) {
             $table->bigIncrements('id');
             // 絡む名を追加していく　長い文章はTextでいける
+            $table->string('appname');
+            $table->text('url'); 
+            $table->string('userid');
+            $table->string('address');
             $table->timestamps();
         });
     }

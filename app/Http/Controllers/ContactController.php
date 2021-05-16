@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AppInfoController extends Controller
+class ContactController extends Controller
 {
     //
     public function index()
     {
-        return view('app_info.index');
+        return view('contact.index');
     }
     public function add(Request $request)
     {
-        return redirect('app_info.index');
+        return redirect('contact.index');
     }  
 
 }

@@ -24,7 +24,7 @@
                 <a class="nav-link text-dark" href="{{route('app_toppage.index')}}">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-link text-dark" href="{{route('app_manage.index')}}">manager</a>
                 <a class="nav-link text-dark" href="{{route('app_addition.index')}}">Addition</a>
-                <a class="nav-link text-dark" href="{{route('app_info.index')}}">Contact</a>
+                <a class="nav-link text-dark" href="{{route('contact.index')}}">Contact</a>
             </div>
         </div>
     </nav>
