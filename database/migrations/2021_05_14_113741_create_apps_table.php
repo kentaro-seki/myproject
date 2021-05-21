@@ -17,9 +17,9 @@ class CreateAppsTable extends Migration
             $table->bigIncrements('id');
             // 絡む名を追加していく　長い文章はTextでいける
             $table->string('appname');
-            $table->text('url'); 
-            $table->string('userid');
-            $table->string('address');
+            $table->text('url')->nullable();
+            // $table->foreignId('user_id');
+            // $table->string('address');
             $table->timestamps();
         });
     }

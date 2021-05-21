@@ -5,9 +5,9 @@
 <div class="row">
   <div class="col-md-max">
     <h2>APPAddition</h2>
-    <form action="/search-result/">
+    <form action="https://www.google.com/search">
       <div class="text-right">
-        <input id="search-input" placeholder="1つキーワードを入力" type="text" name="search-key">
+        <input id="search-input" placeholder="1つキーワードを入力" type="text" name="q" target="_blank">
         <input id="search-buttom" class="btn btn-primary btn-sm" type="submit" value="search" method="get">
       </div>
     </form>
@@ -26,6 +26,10 @@
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text"></p>
+                {{-- <form action="https://www.google.com/search" target="_blank">
+                <input type="text" name="q">
+                <button>検索</button>
+                </form> --}}
               </div>
             </div>
           </div>
