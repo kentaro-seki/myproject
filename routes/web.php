@@ -24,7 +24,7 @@ Route::group([], function() {
 
 Route::group([], function() {
     Route::get('app_addition/', 'AppAdditionController@index')->name('app_addition.index');
-
+    Route::post('app_addition/', 'AppAdditionController@create');
 });
 
 Route::group([], function() {

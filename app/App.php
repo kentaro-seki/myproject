@@ -12,7 +12,5 @@ class App extends Model
     public static $rules = array(
         'appname' => 'required',
         'url' => 'required',
-        'userid' => 'required',
-        'address' => 'required',
     );
 }
