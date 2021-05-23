@@ -25,7 +25,7 @@
                 <button>検索</button>
                 </form> --}}
                     <div class="col-md-10">
-                        <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+
                     </div>
                 </div>
             </div>
@@ -34,12 +34,24 @@
     </div>
     <div class="container">
         <div class="text-right">
-            <div class="btn">
+{{-- routeを使ってcreateを実行 --}}
+        <form action="{{route('app_addition.create')}}" method="POST">
+        <input type="text" class="form-control" name="appname" value="{{ old('appname') }}">
+        <div class="btn">
                 {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="addition">
-            </div>
+                </div>
+            </form>
         </div>
     </div>
+    @foreach($posts as $app)
+    <tr>
+        <th>{{ $app->id }}</th>
+        <td>{{ str_limit($app->appname, 100) }}</td>
+        <td>{{ str_limit($app->url, 250) }}</td>
+    </tr>
+@endforeach
+
 {{-- <a href="{{ route('app_manage.index') }}"  --}}
     <footer class="text-center bg-dark text-white">
         <p class="py-3">APPMANAGER</p>

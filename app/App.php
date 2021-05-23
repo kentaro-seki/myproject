@@ -11,6 +11,6 @@ class App extends Model
     // 以下を追記
     public static $rules = array(
         'appname' => 'required',
-        'url' => 'required',
+        // urlはバリデーションがかかってしまう為削除
     );
 }
