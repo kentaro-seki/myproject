@@ -3,28 +3,24 @@
 
 @section('content')
 
-<div class="container py-4" id="works">
+<div class="container-fluid" id="works">
     <h2>APPMNAGER</h2>
         <p>こちらのサイトでは現在お使いのアプリ、ツール等が一括し管理できるサービスを提供しております。</p>
-     <div class="card-deck"> 
+     <div class="card-deck">
         <div class="card ">
               <img src="/images/image.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">デザインロゴ</h5>
-                <p class="card-text"></p>
-                <p class="card-text"><small class="text-muted">ここに説明</small></p>
-              </div>       
+              </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container-fluid">
     <div class="btn">
                 <a href="{{route('app_manage.index')}}" class="btn btn-primary btn-sm">アプリ管理へ</a>
                 <a href="{{route('app_addition.index')}}" class="btn btn-primary btn-sm">アプリ追加へ</a>
-    </div> 
+    </div>
 </div>
 
-<div class="container py-4" id="contact">
+<div class="container-fluid" id="contact">
     <h2>Contact</h2>
     <form>
         <div class="form-group">
