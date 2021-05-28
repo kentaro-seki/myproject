@@ -13,13 +13,12 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-btn">
     <div class="btn">
                 <a href="{{route('app_manage.index')}}" class="btn btn-primary btn-sm">アプリ管理へ</a>
                 <a href="{{route('app_addition.index')}}" class="btn btn-primary btn-sm">アプリ追加へ</a>
     </div>
 </div>
-
 <div class="container-fluid" id="contact">
     <h2>Contact</h2>
     <form>
@@ -31,10 +30,12 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <a href="{{route('contact.index')}}" class="btn btn-primary">OK</a>
-    <!-- route でInfoへ移動できるようにする -->
+        <!-- route でInfoへ移動できるようにする -->
     </form>
 </div>
+<div class="container-btn">
+    <a href="{{route('contact.index')}}" class="btn btn-primary">OK</a>
+   </div>
     <footer class="text-center bg-dark text-white">
         <p class="py-3">APPMNAGER</p>
     </footer>

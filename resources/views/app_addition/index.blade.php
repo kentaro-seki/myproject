@@ -34,17 +34,56 @@
     </div>
     <div class="container">
         <div class="text-right">
-{{-- routeを使ってcreateを実行 --}}
-        <form action="{{route('app_addition.create')}}" method="POST">
-        <input type="text" class="form-control" name="appname" value="{{ old('appname') }}">
-        <div class="btn">
-                {{ csrf_field() }}
+            {{-- routeを使ってcreateを実行 --}}
+            <form action="{{ route('app_addition.create') }}" method="POST">
+                <input type="text" class="form-control" name="appname" value="{{ old('appname') }}">
+                <div class="btn">
+                    {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="addition">
                 </div>
             </form>
         </div>
-    </div>
+        <div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th width="10%">ID</th>
+                            <th width="20%">アプリ名</th>
+                            <th width="50%">URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($apps as $app)
+                            <tr>
+                                <th>{{ $app->id }}</th>
+                                <td>
+                                    {{-- TDから何かに変更する　BOOTSTRAP --}}
+                                    <form action="{{ route('app_addition.update', $app->id) }}" method="post">
+                                        {{ csrf_field() }}
+                                        <input type="text" value="{{ $app->appname }}" name="appname">
+                                        <button>
+                                            更新
+                                        </button>
+                                    </form>
+                                </td>
+                                <td>
 
+                                    <form action="{{ route('app_addition.update', $app->id) }}" method="post">
+                                        {{ csrf_field() }}
+                                        <input type="text" value="{{ $app->url }}" name="url">
+                                        <button>
+                                            更新
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     <footer class="text-center bg-dark text-white">
         <p class="py-3">APPMANAGER</p>
     </footer>
