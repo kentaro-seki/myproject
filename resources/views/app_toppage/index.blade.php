@@ -9,11 +9,11 @@
      <div class="card-deck">
         <div class="card ">
               <img src="/images/image.jpg" class="card-img-top" alt="...">
-              </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="container-btn">
+<div class="container-fluid">
     <div class="btn">
                 <a href="{{route('app_manage.index')}}" class="btn btn-primary btn-sm">アプリ管理へ</a>
                 <a href="{{route('app_addition.index')}}" class="btn btn-primary btn-sm">アプリ追加へ</a>

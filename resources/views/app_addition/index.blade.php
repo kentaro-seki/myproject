@@ -12,7 +12,7 @@
                 </div>
             </form> --}}
         </div>
-        <div class="row">
+        <div class="containar">
             <div class="list-news col-md-12 mx-auto">
                 <div class="row">
                     <div class="contents">
@@ -24,16 +24,12 @@
                 <input type="text" name="q">
                 <button>検索</button>
                 </form> --}}
-                    <div class="col-md-10">
-
+                    <div class="col-sm-6">
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-    </div>
-    <div class="container">
-        <div class="text-right">
+        <div class="text" style="width: 1000px ">
             {{-- routeを使ってcreateを実行 --}}
             <form action="{{ route('app_addition.create') }}" method="POST">
                 <input type="text" class="form-control" name="appname" value="{{ old('appname') }}">
@@ -45,10 +41,10 @@
         </div>
         <div>
             <div class="containar">
-                <table class="table">
+                <table class="table" style="width: 1000px">
                     <thead>
                         <tr>
-                            <th width="10%">ID</th>
+                            <th width="5%">ID</th>
                             <th width="20%">アプリ名</th>
                             <th width="50%">URL</th>
                         </tr>
@@ -61,7 +57,7 @@
                                     {{-- TDから何かに変更する　BOOTSTRAP --}}
                                     <form action="{{ route('app_addition.update', $app->id) }}" method="post">
                                         {{ csrf_field() }}
-                                        <input type="text" value="{{ $app->appname }}" name="appname">
+                                        <input type="text" style="width:200px" value="{{ $app->appname }}" name="appname">
                                         <button>
                                             更新
                                         </button>
@@ -70,7 +66,7 @@
                                 <td>
                                     <form action="{{ route('app_addition.update', $app->id) }}" method="post">
                                         {{ csrf_field() }}
-                                        <input type="text" value="{{ $app->url }}" name="url">
+                                        <input type="text" style="width:500px" value="{{ $app->url }}" name="url">
                                         <button>
                                             更新
                                         </button>
@@ -83,6 +79,7 @@
             </div>
         </div>
     </div>
+</div>
     <footer class="text-center bg-dark text-white">
         <p class="py-3">APPMANAGER</p>
     </footer>
