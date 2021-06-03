@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="container-fluid" id="works">
-    <h2>APPMNAGER</h2>
+    <h2>APPMANAGER</h2>
         <p>こちらのサイトでは現在お使いのアプリ、ツール等が一括し管理できるサービスを提供しております。</p>
      <div class="card-deck">
         <div class="card ">
