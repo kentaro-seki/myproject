@@ -4,6 +4,11 @@
 @section('content')
 <div class="container my-5">
 <h2>Contact</h2>
+<div class="card-deck">
+    <div class="card ">
+    <img src="/images/image.jpg" alt="">
+</div>
+</div>
 <form action="{{ action('ContactController@add') }}" method="post" enctype="multipart/form-data">
 @if (count($errors) > 0)
     <ul>

@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-max">
             {{-- <form action="https://www.google.com/search">
                 <div class="text-right">
@@ -11,12 +11,10 @@
                     <input id="search-buttom" class="btn btn-primary btn-sm" type="submit" value="search" method="get">
                 </div>
             </form> --}}
-        </div>
-        <div class="containar">
-            <div class="list-news col-md-12 mx-auto">
-                <div class="row">
-                    <div class="contents">
-                        <h1>検索結果</h1>
+        {{-- </div> --}}
+        <div class="table table-bordered">
+            <div class="thead-light">
+                <h1>検索結果</h1>
                         <ul id="ul">
                         </ul>
                     </div>
@@ -25,11 +23,9 @@
                 <button>検索</button>
                 </form> --}}
                     <div class="col-sm-6">
-                    </div>
                 </div>
             </div>
-    </div>
-        <div class="text" style="width: 1000px ">
+        <div class="text" style="width: 500px ">
             {{-- routeを使ってcreateを実行 --}}
             <form action="{{ route('app_addition.create') }}" method="POST">
                 <input type="text" class="form-control" name="appname" value="{{ old('appname') }}">
@@ -40,9 +36,8 @@
             </form>
         </div>
         <div>
-            <div class="containar">
-                <table class="table" style="width: 1000px">
-                    <thead>
+            <table class="table table-bordered">
+                <thead class="thead-light">
                         <tr>
                             <th width="5%">ID</th>
                             <th width="20%">アプリ名</th>
