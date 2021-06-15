@@ -4,6 +4,7 @@
 @section('content')
 <div class="container my-5">
 <h2>Contact</h2>
+{{-- このページは使用しない --}}
 <div class="card-deck">
     <div class="card ">
     <img src="/images/image.jpg" alt="">
